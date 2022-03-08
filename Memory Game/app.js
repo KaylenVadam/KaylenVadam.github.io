@@ -12,10 +12,6 @@ const cardArray = [
     },
     {
         name: 'Hydra',
-        img: 'Memory_Game_Images/Forest_Spirit.jpg'
-    },
-    {
-        name: 'Forest_Spirit',
         img: 'Memory_Game_Images/Hydra.jpg'
     },
     {
