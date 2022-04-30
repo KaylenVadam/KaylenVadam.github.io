@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>            
+        <title>Delete Page</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+        <body>    
+            <h1>Do you really want to delete this entry?</h1>
+            <button id="delete">DELETE</button>
+            <script>
+
+                //https://www.sitepoint.com/get-url-parameters-with-javascript/
+                //all of this code is to get the id from the url and convert it into a number instead of a string. edit_id is the URL ID. 
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                const URL_ID = urlParams.get('id');
+                const delete_id = parseInt(URL_ID);
+
+
+                document.getElementById('delete').addEventListener('click', (event) => {
+                    const formData = new FormData();
+        
+                     formData.append('url_id', delete_id); //Sending the URL ID to the server so it knows which survey result to delete 
+
+                //Settings for FETCH API request
+                let fetchSettings = {
+                    method: 'POST',
+                    body: formData
+                };
+
+                //Send FETCH API request
+                fetch("http://localhost/uneededResponce/", fetchSettings)
+                    .then((response) => {
+                        return new Promise((resolve) => response.json()
+                            .then((json) => resolve({
+                                status: response.status,
+                                json,
+                            })
+                        ));
+                    })
+                    //Logic to display errors on form 
+                    .then(({status, json}) => {
+                        
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+
+            });
+            </script>
+        </body>
+    </html>

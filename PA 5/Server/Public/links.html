@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>            
+        <title>Halo Infinite Survey Links</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+        <body>    
+            <div class="inline">
+                <span id="survey-responses"></span>
+                <span id="survey-responses-delete"></span>    
+            </div>
+                <script>
+
+
+                    fetch("http://localhost/results/", {method: 'GET'})
+                            .then((response) => {
+                                return new Promise((resolve) => response.json()
+                                    .then((json) => resolve({
+                                        status: response.status,
+                                        json,
+                                    })
+                                ));
+                            })
+                            .then(({status, json}) => {
+                                if (200 === status) {
+                                const surveyResponses = document.getElementById('survey-responses')
+                                const surveyResponsesDelete = document.getElementById('survey-responses-delete')
+                                //getting all from database
+                                if (json.data.length > 0) { //check to see if length is greater then zero, so we know the database isnt empty
+                                    for (let i = 0; i < json.data.length; i++){ //set i to zero, then sees if its smaller then the length so that it will gradually grab each portion of the database until it has got everything
+                                        surveyResponses.innerHTML += "<p><a href = 'edit.html?id=" + json.data[i].id + "'/>Link "+json.data[i].id+"</p>"; //adding to the url, and proceduarlly adding links to each seperate entry in the database
+                                        surveyResponsesDelete.innerHTML += "<p><a href = 'delete.html?id=" + json.data[i].id + "'/>Delete "+ json.data[i].id +"</p>";
+                                        }
+                                }
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                            });
+            </script>
+        </body>
+    </html>

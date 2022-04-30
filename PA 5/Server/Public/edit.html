@@ -1,0 +1,462 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>            
+        <title>GIMM 285 Form</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <h1>Halo Infinite</h1>
+
+        <p>Welcome to the Survey Editor</p>
+
+        <div id='invalidate-form' class='alert-error'></div>
+
+        <hr/>
+
+        <div class='row'>
+            <div class='col-2'>
+                <label>Do you played Ranked or Casual?</label>
+            </div>
+            <div class='col-10'>
+<form>
+  <input type="radio" id="playstylec" name="playstyle" value="casual">
+  <label for="casual">Casual</label><br>
+  <input type="radio" id="playstyler" name="playstyle" value="ranked">
+  <label for="ranked">Ranked</label><br>
+</form>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div id='playstyle-error' class='col-12 error-message'>&nbsp;</div>
+        </div>
+
+
+        <div class='row'>
+            <div class='col-2'>
+                <label>Favorite Weapon?</label>
+            </div>
+            <div class='col-10'>
+<form>
+  <label for="Favorite Weapon"></label><br>
+  <input type="text" id="FavoriteWeapon" name="FavoriteWeapon"><br>
+</form>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div id='FavoriteWeapon-error' class='col-12 error-message'>&nbsp;</div>
+        </div>
+
+         <div class='row'>
+            <div class='col-2'>
+                <label>Worst Weapon?</label>
+            </div>
+            <div class='col-10'>
+<form>
+  <label for="Worst Weapon"></label><br>
+  <input type="text" id="WorstWeapon" name="WorstWeapon"><br>
+</form>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div id='WorstWeapon-error' class='col-12 error-message'>&nbsp;</div>
+        </div>
+
+
+                 <div class='row'>
+            <div class='col-2'>
+                <label>Show us your Spartan!</label>
+            </div>
+            <div class='col-10'>
+<form>
+  <label for="file">Select a file:</label>
+  <input type="file" id="file" name="file">
+</form>
+            </div>
+        </div>
+
+        <div class='row'>
+            <div id='file-error' class='col-12 error-message'>&nbsp;</div>
+        </div>
+
+        <div class='row'>
+            <div class='col-2'>
+                <label>Favorite Ability?</label>
+            </div>
+            <div class='col-10'>
+<select id='favAbility' name='favAbility'>
+<option value = Grapple> Grapple hook </option>
+<option value = Repulser> Repulser </option>
+<option value = Thruster> Thruster </option>
+<option value = Dropwall> Dropwall </option>
+<option value = Threat> Threat sensor </option>
+</select>
+
+            </div>
+        </div>
+
+        <div class='row'>
+            <div class='col-2'>
+                <label>Favorite Boss Fight?</label>
+            </div>
+            <div class='col-10'>
+<select id='favBoss' name='favBoss'>
+<option value = Tremonius> Tremonius </option>r
+<option value = Chak‘Lok> Chak ‘Lok </option>
+<option value = Bassus> Bassus </option>
+<option value = AdjutantResolution> Adjutant Resolution </option>
+<option value = TovarusandHyperius> Tovarus and Hyperius </option>
+<option value = Jega‘Rdomnai> Jega ‘Rdomnai </option>
+<option value = Escharum> Escharum </option>
+<option value = TheHarbinger> The Harbinger </option>
+</select>
+
+            </div>
+        </div>
+
+
+        <div class='row'>
+            <div class='col-2'>
+                <label>Do you use Mouse and Keyboard or Controller?</label>
+            </div>
+            <div class='col-10'>
+
+  <input type="radio" id="gameInputm" name="gameInput" value="Mouse">
+  <label for="Mouse">Mouse</label><br>
+  <input type="radio" id="gameInputc" name="gameInput" value="Controller">
+  <label for="Controller">Controller</label><br>
+
+            </div>
+        </div>
+
+        <div class='row'>
+            <div id='gameInput-error' class='col-12 error-message'>&nbsp;</div>
+        </div>
+
+        <div class='row'>
+            <div class='col-2'>
+                <label>What is your favorite Vehicle?</label>
+            </div>
+            <div class='col-10'>
+
+  <input type="radio" id="favVehicleb" name="favVehicle" value="Banshee">
+  <label for="Banshee">Banshee</label><br>
+  <input type="radio" id="favVehiclec" name="favVehicle" value="Chopper">
+  <label for="Chopper">Chopper</label><br>
+  <input type="radio" id="favVehiclegh" name="favVehicle" value="Ghost">
+  <label for="Ghost">Ghost</label><br>
+  <input type="radio" id="favVehicleg" name="favVehicle" value="Gungoose">
+  <label for="Gungoose">Gungoose</label><br>
+  <input type="radio" id="favVehiclem" name="favVehicle" value="Mongoose">
+  <label for="Mongoose">Mongoose</label><br>
+  <input type="radio" id="favVehiclera" name="favVehicle" value="Razerback">
+  <label for="Razerback">Razerback</label><br>
+  <input type="radio" id="favVehicler" name="favVehicle" value="Rockethog">
+  <label for="Rockethog">Rockethog</label><br>
+  <input type="radio" id="favVehicles" name="favVehicle" value="Scorpian">
+  <label for="Scorpian">Scorpian</label><br>
+  <input type="radio" id="favVehiclewar" name="favVehicle" value="Warthog">
+  <label for="Warthog">Warthog</label><br>
+  <input type="radio" id="favVehiclewa" name="favVehicle" value="Wasp">
+  <label for="Wasp">Wasp</label><br>
+  <input type="radio" id="favVehiclew" name="favVehicle" value="Wraith">
+  <label for="Wraith">Wraith</label><br>
+  
+            </div>
+        </div>
+
+        <div class='row'>
+            <div id='favVehicle-error' class='col-12 error-message'>&nbsp;</div>
+        </div>
+
+        <div class='row'>
+            <div class='col-12'>
+                <button id='submit'>Submit</button>
+            </div>
+        </div>
+    <br>
+<hr>
+
+        <div class="grid-container" id = 'grid'>
+            <div class="grid-item">Ranked or Casual</div>
+            <div class="grid-item">awnser</div>
+            <div class="grid-item">Favorite Weapon</div>
+            <div class="grid-item">awnser</div>
+            <div class="grid-item">Worst Weapon</div>
+            <div class="grid-item">asnwer</div>
+            <div class="grid-item">show us your spartan</div>
+            <div class="grid-item">awnser</div>
+            <div class="grid-item">Favorite Ability</div>
+            <div class="grid-item">awnser</div>
+            <div class="grid-item">Favorite boss</div>
+            <div class="grid-item">asnwer</div>
+            <div class="grid-item">Mouse or Controller</div>
+            <div class="grid-item">awnser</div>
+            <div class="grid-item">Favorite Vehicle</div>
+            <div class="grid-item">awnser</div>
+          </div>
+
+
+        <hr/>
+
+        <script>
+
+            const fetchMethod = (url, fetchParameters, callback) => {
+                fetch(url, fetchParameters)
+                    .then((response) => {
+                        return new Promise((resolve) => response.json()
+                            .then((json) => resolve({
+                                status: response.status,
+                                json,
+                            })
+                        ));
+                    })
+                    .then(({status, json}) => {
+                        callback(status, json);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            };
+
+
+        const queryString = window.location.search;
+        const searchParams = new URLSearchParams(queryString);
+
+        fetch(
+            "http://localhost/get_results/" + searchParams.get('id') + "/", {method: 'GET'})
+                    .then((response) => {
+                        return new Promise((resolve) => response.json()
+                            .then((json) => resolve({
+                                status: response.status,
+                                json,
+                            })
+                        ));
+                    })
+                    .then(({status, json}) => {
+                        if (200 === status) {
+                            console.log(json.data)
+            //{method: 'GET'},
+            //(status, json) => {
+            //    if (200 === status) {
+                            
+                                
+                     
+          //find postion of id=?
+          //let tablepos = window.location.href.indexOf('?id=');
+          //adjust postion based of id
+          //tablepos = tablepos + 4;
+          //find character at adjusted position (number)
+          //i = window.location.href.charAt(tablepos); //set returned character to i
+          //i = i - 1; //cause arrays start at zero and the id started at 1
+          //idToEdit= i + 1;
+          //i is id of link and database
+
+
+          
+          
+
+            if(json.data[0].ranked_or_casual == "casual")
+            {
+            document.getElementById('playstylec').checked = true;
+        }
+        else{
+            document.getElementById('playstyler').checked = true;
+        }
+        
+        document.getElementById('FavoriteWeapon').value = json.data[0].fav_weaponry;
+        document.getElementById('WorstWeapon').value = json.data[0].worst_weaponry;
+        document.getElementById('favAbility').value = json.data[0].fav_ability;
+        document.getElementById('favBoss').value = json.data[0].fav_boss;
+
+        if(json.data[0].mouse_or_controller == "Mouse"){
+            document.getElementById('gameInputm').checked = true;
+        }
+        else{
+            document.getElementById('gameInputc').checked = true;
+        }
+
+        if(json.data[0].fav_vehicle == "Banshee"){
+            document.getElementById('favVehicleb').checked = true;
+        }
+        else {
+            document.getElementById('favVehicleb').checked = false;
+        }
+        if(json.data[0].fav_vehicle == 'Chopper'){
+            document.getElementById('favVehiclec').checked = true;
+        }
+        else {
+            document.getElementById('favVehiclec').checked = false;
+        }
+        if(json.data[0].fav_vehicle == 'Ghost'){
+            document.getElementById('favVehiclegh').checked = true;
+        }
+        else {
+            document.getElementById('favVehiclegh').checked = false;
+        }
+        if(json.data[0].fav_vehicle == 'Gungoose'){
+            document.getElementById('favVehicleg').checked = true;
+        }
+        else {
+            document.getElementById('favVehicleg').checked = false;
+        }
+        if(json.data[0].fav_vehicle == 'Mongoose'){
+            document.getElementById('favVehiclem').checked = true;
+        }
+        else {
+            document.getElementById('favVehiclem').checked = false;
+        }
+        if(json.data[0].fav_vehicle == 'Razerback'){
+            document.getElementById('favVehiclera').checked = true;
+        }
+        else {
+            document.getElementById('favVehiclera').checked = false;
+        }
+        if(json.data[0].fav_vehicle == 'Rockethog'){
+            document.getElementById('favVehicler').checked = true;
+        }
+        else {
+            document.getElementById('favVehicler').checked = false;
+        }
+        if(json.data[0].fav_vehicle == 'Scorpian'){
+            document.getElementById('favVehicles').checked = true;
+        }
+        else {
+            document.getElementById('favVehicles').checked = false;
+        }
+        if(json.data[0].fav_vehicle == 'Warthog'){
+            document.getElementById('favVehiclewar').checked = true;
+        }
+        else {
+            document.getElementById('favVehiclewar').checked = false;
+        }
+        if(json.data[0].fav_vehicle == 'Wasp'){
+            document.getElementById('favVehiclewa').checked = true;
+        }
+        else {
+            document.getElementById('favVehiclewa').checked = false;
+        }
+        if(json.data[0].fav_vehicle == 'Wraith'){
+            document.getElementById('favVehiclew').checked = true;
+        }
+        else {
+            document.getElementById('favVehiclew').checked = false;
+        } }
+                            }
+                        
+                    )
+                    .catch(error => {
+                        console.error('Error:', error);
+         });
+
+            let casualRanked;
+            let likedWeapon;
+            let hatedWeapon;
+            let spartan;
+            let likedability;
+            let likedboss;
+            let mousecontroller;
+            let likedVehicle;
+
+            //Hide banner at start of script
+        const errorBanner = document.getElementById('invalidate-form');
+        errorBanner.hidden = true;
+
+            document.getElementById('submit').addEventListener('click', () => {
+                const formData = new FormData();
+                const checkedPlayStyleButton = document.querySelector('input[name="playstyle"]:checked');
+                const checkedGameInputButton = document.querySelector('input[name="gameInput"]:checked');
+                const checkedfavVehicleButton = document.querySelector('input[name="favVehicle"]:checked');
+        
+                formData.append('playstyle', null !== checkedPlayStyleButton ? checkedPlayStyleButton.value : '');
+                formData.append('FavoriteWeapon', document.getElementById("FavoriteWeapon").value);
+                formData.append('WorstWeapon', document.getElementById("WorstWeapon").value);
+                formData.append('file', document.querySelector('input[type="file"]').files[0]);
+                formData.append('favAbility', document.querySelector('select[name="favAbility"]').value);
+                formData.append('favBoss', document.getElementById("favBoss").value);
+                formData.append('gameInput', null !== checkedGameInputButton ? checkedGameInputButton.value : '');
+                formData.append('favVehicle', null !== checkedfavVehicleButton ? checkedfavVehicleButton.value : '');
+                
+
+                //console.log(document.querySelector('input[type="file"]').files[0]);
+                let fetchSettings = {
+                    method: 'PUT',
+                    body: formData
+                };
+                fetch("http://localhost/newResponce/", fetchSettings)
+                    .then((response) => {
+                    return new Promise((resolve) => response.json()
+                        .then((json) => resolve({
+                            status: response.status,
+                            json,
+                        })
+                    ));
+                })
+
+                
+                //Logic to display errors on form 
+                
+                .then(({status, json}) => {
+                    const errorMessages = document.getElementsByClassName('error-message');
+                    errorBanner.hidden = true;
+                    for (htmlElement of errorMessages) {
+                        htmlElement.innerHTML = '&nbsp;';
+                    }
+                    if (status === 400) {
+                        errorBanner.innerText = 'Form has errors. Please correct them and resubmit.';
+                        errorBanner.hidden = false;
+                        for (error of json.errors) {
+                            const errorId = error.param + '-error';
+                            document.getElementById(errorId).innerHTML = error.msg
+                        }
+                    } 
+
+                    if(status == 200) {
+                        casualRanked = json.success.playstyle
+                        likedWeapon = json.success.FavoriteWeapon
+                        hatedWeapon = json.success.WorstWeapon
+                        spartan = json.file.filename
+                        likedability = json.success.favAbility
+                        likedboss = json.success.favBoss
+                        mousecontroller = json.success.gameInput
+                        likedVehicle = json.success.favVehicle
+
+                        errorBanner.innerText = 'Form is Complete!';
+                        errorBanner.hidden = false;
+                    }
+
+                    let gridTemplate = '<div class="grid-container">' +
+            '<div class="grid-item">Ranked or Casual</div>' +
+            '<div class="grid-item">' + casualRanked + '</div>' +
+            '<div class="grid-item">Favorite Weapon</div>' +
+            '<div class="grid-item">' + likedWeapon +'</div>' +
+            '<div class="grid-item">Worst Weapon</div>' +
+            '<div class="grid-item">' + hatedWeapon +'</div>' +
+            '<div class="grid-item">show us your spartan</div>' +
+            '<div class="grid-item"> <img src = "C:/Users/sdg3g/Documents/gimm 285/PA 5/Server/uploads/' + spartan +'" width="300" height="600"></div>' +
+            '<div class="grid-item">Favorite Ability</div>' +
+            '<div class="grid-item">' + likedability +'</div>' +
+            '<div class="grid-item">Favorite boss</div>' +
+            '<div class="grid-item">' + likedboss +'</div>' +
+            '<div class="grid-item">Mouse or Controller</div>' +
+            '<div class="grid-item">' + mousecontroller +'</div>' +
+            '<div class="grid-item">Favorite Vehicle</div>' +
+            '<div class="grid-item">' + likedVehicle +'</div>' +
+          "</div>"
+
+    document.getElementById('grid').innerHTML = gridTemplate
+
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            return;
+            })
+        </script>
+
+        
+    </body>
+</html>
